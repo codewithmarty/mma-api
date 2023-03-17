@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const port = 3000;
 
 require('dotenv').config();
 require('./config/database')
@@ -39,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Express app listening on port ${port}`)
 })
 
