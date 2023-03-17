@@ -47,4 +47,4 @@ To make a request to the MMA API, send an HTTP GET request to the desired endpoi
 
 ## Landing Page for API
 
-![Landing Page](/images/landingpage.png)
+![Landing Page](./public/images/landingpage.png)
