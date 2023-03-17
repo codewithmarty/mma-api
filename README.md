@@ -8,7 +8,7 @@ This API in its current implementation does not require an API Key.
 
 ## Getting Started
 
-The base url is `http://localhost:3000/`
+The base url is `https://mma-api-production-1e44.up.railway.app/`
 
 ## API Endpoints
 
