@@ -13,9 +13,9 @@ The MMA API provides the following endpoints:
 ### Fighters
 
 - `/api/fighters`: Get a list of all fighters.
-- `/api/fighters/{firstName-lastName}`: Get details about a specific fighter.
-- `/api/fighters/weight/{weight}`: Get a list of all fighters at a given weight-class.
-- `/api/fighters/gender/{gender}`: Get a list of all fighters for a given gender.
+- `/api/fighters/{firstName-lastName}`: Get details about a specific fighter (Conor-McGregor, Amanda-Nunes, etc).
+- `/api/fighters/weight/{weight}`: Get a list of all fighters at a given weight-class (Lightweight, Featherweight, etc).
+- `/api/fighters/gender/{gender}`: Get a list of all fighters for a given gender (men/women).
 
 ## Making Requests
 
@@ -26,7 +26,7 @@ To make a request to the MMA API, send an HTTP GET request to the desired endpoi
 - GET /api/fighters/Conor-McGregor 
 
 ### Response:
-
+```json
    {
         "name": "Conor McGregor",
         "age": 34,
@@ -43,7 +43,8 @@ To make a request to the MMA API, send an HTTP GET request to the desired endpoi
           "takedown-accuracy": "56%"
         }
     }
+```
 
 ## Landing Page for API
 
-(Landing Page)[/images/landingpage.png]
+![Landing Page](/images/landingpage.png)
