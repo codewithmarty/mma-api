@@ -1,5 +1,9 @@
+const Counter = require('../models/counter')
+
 function index(req, res) {
-    res.render('index', { title: 'Express' });
+    Counter.findOne().then(counter => {
+        res.render('index', { counter });
+    })
 }
 
 module.exports = {
