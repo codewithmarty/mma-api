@@ -51,4 +51,6 @@ To make a request to the MMA API, send an HTTP GET request to the desired endpoi
 
 ## Landing Page for API
 
+Hit the landing page [here](https://mma-api-production-1e44.up.railway.app/)
+
 ![Landing Page](./public/images/landingpage.png)
