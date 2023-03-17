@@ -6,6 +6,10 @@ This API provides access to data on mixed martial arts fighters.
 
 This API in its current implementation does not require an API Key.
 
+## Getting Started
+
+The base url is `http://localhost:3000/`
+
 ## API Endpoints
 
 The MMA API provides the following endpoints:
