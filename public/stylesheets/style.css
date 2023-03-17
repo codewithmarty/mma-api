@@ -1,0 +1,50 @@
+.sidenav-trigger {
+  font-size: 30px;
+}
+
+.search-form {
+  display: flex;
+  margin: 5rem;
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    margin: 5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .pre-center-align {
+    align-items: center;
+  }
+}
+
+.label-icon {
+  font-size: 1rem;
+}
+
+.pre-center-align {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  background-color: #f0f0f0; 
+  text-align: left;
+  padding: 10px;
+  overflow: auto;
+}
+
+.endpoint-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+
+.endpoint-list h5 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .endpoint-list {
+    margin: 0 2%
+  }
+}

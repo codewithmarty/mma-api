@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMA API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="blue lighten-2">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">MMA API</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger">☰</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side navigation menu for mobile -->
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="#">Home</a></li>
+  </ul>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1 class="center-align">Welcome to the MMA API</h1>
+    <p>
+      An MMA API (Application Programming Interface) is a software interface that allows developers to access and interact with data related to Mixed Martial Arts (MMA) from various sources, such as fighter statistics, rankings, and more. 
+      MMA APIs can be used to create applications and websites that provide real-time updates and insights on MMA fighters. 
+      These APIs typically provide a range of endpoints that developers can use to retrieve data in a structured format, such as JSON or XML, making it easy to integrate the data into their own applications. 
+      MMA APIs can be used by developers to build applications for fans.
+    </p>
+    <div class="row">
+      <div class="search-form">
+        <label class="label-icon" for="search">https://localhost:3000/api/fighters/</label>
+        <div id="search" type="search" style="height: 25px;" >Conor-McGregor</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pre-center-align">
+    <div class="result">Data for Conor McGregor</div>
+    <pre>
+      {
+        "name": "Conor McGregor",
+        "age": 34,
+        "status": "Active",
+        "nickname": "The Notorious",
+        "weight-class": "Lightweight",
+        "thumbnail": "https://dmxg5wxfqgb4u.cloudfront.net/styles/teaser/s3/2021-07/67667%252Fprofile-galery%252Fprofile-picture%252FMCGREGOR_CONOR_07-10.png?h=a30e7339&itok=9J5yEZpN",
+        "full-thumbnail": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/MCGREGOR_CONOR_L_07-10.png?itok=xbg9Kwfj",
+        "stats": {
+          "record": "22-6-0 (W-L-D)",
+          "knockout-wins": "19",
+          "submission-wins": "1",
+          "striking-accuracy": "50%",
+          "takedown-accuracy": "56%"
+        }
+      }
+    </pre>
+  </div>
+
+  <div class="endpoint-list">
+    <h5>Other endpoints available are:</h5>
+    <ul class="collection endpoint-list">
+        <li class="collection-item">"https://localhost:3000/api/fighters/all" - returns an array of all fighters</li>
+        <li class="collection-item">"https://localhost:3000/api/fighters/active" - returns all active fighters</li>
+        <li class="collection-item">"https://localhost:3000/api/fighters/weight/lightweight" - returns all fighters from a given weight-class (in this case, lightweight)</li>
+        <li class="collection-item">"https://localhost:3000/api/fighters/gender/men" - returns all male fighters</li>
+        <li class="collection-item">"https://localhost:3000/api/fighters/gender/women" - returns all female fighters</li>
+    </ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>
