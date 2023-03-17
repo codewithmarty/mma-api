@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Express app listening on port ${port}`)
+  console.log(`Express app listening on port ${process.env.PORT}`)
 })
 
 module.exports = app;
